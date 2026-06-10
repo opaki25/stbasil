@@ -2374,9 +2374,9 @@ body.home-upgrade::before {
 
     .home-upgrade .navbar-light {
         padding: 10px 14px !important;
-        border-radius: 18px;
-        background: rgba(255, 255, 255, 0.96);
-        box-shadow: 0 14px 34px rgba(10, 24, 20, 0.12);
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
         min-height: auto;
         align-items: center;
     }
@@ -2399,7 +2399,11 @@ body.home-upgrade::before {
 
     .home-upgrade .navbar-light .navbar-collapse {
         margin-top: 10px;
+        padding: 14px 18px;
         border-top: 1px solid rgba(10, 24, 20, 0.12);
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.96);
+        box-shadow: 0 14px 34px rgba(10, 24, 20, 0.12);
     }
 
     .home-upgrade .navbar-light .navbar-nav .nav-link,
