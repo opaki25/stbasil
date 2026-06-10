@@ -2479,10 +2479,12 @@ body.home-upgrade::before {
     }
 
     .home-upgrade .navbar-light {
-        min-height: 92px;
-        padding: 8px 14px !important;
-        border-radius: 14px;
+        min-height: auto;
+        padding: 6px 8px !important;
+        border-radius: 0;
         align-items: center;
+        background: transparent;
+        box-shadow: none;
     }
 
     .modern-hero h1 {
@@ -2503,6 +2505,8 @@ body.home-upgrade::before {
         border-width: 2px;
         border-radius: 12px;
         font-size: 1.45rem;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 8px 22px rgba(10, 24, 20, 0.18);
     }
 
     .hero-brand-name {
