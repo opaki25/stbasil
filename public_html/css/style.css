@@ -2470,12 +2470,19 @@ body.home-upgrade::before {
         min-height: 540px;
         margin-top: 0;
         border-radius: 0 0 22px 22px;
-        padding: 158px 20px 56px;
+        padding: 118px 20px 56px;
     }
 
     .home-upgrade > .container-fluid.position-relative.p-0 {
-        top: 10px;
-        width: calc(100% - 18px);
+        top: 8px;
+        width: calc(100% - 20px);
+    }
+
+    .home-upgrade .navbar-light {
+        min-height: 92px;
+        padding: 8px 14px !important;
+        border-radius: 14px;
+        align-items: center;
     }
 
     .modern-hero h1 {
@@ -2483,7 +2490,19 @@ body.home-upgrade::before {
     }
 
     .home-upgrade .navbar-light .navbar-brand img {
-        max-height: 112px;
+        max-height: 76px;
+    }
+
+    .home-upgrade .navbar.navbar-expand-lg .navbar-toggler {
+        width: 66px;
+        height: 54px;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-width: 2px;
+        border-radius: 12px;
+        font-size: 1.45rem;
     }
 
     .hero-brand-name {
