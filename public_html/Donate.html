@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Support - St.Basil Palliative Home Care Promotion</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+          <!-- Favicon -->
+     <link href="img/official-logo.png" rel="icon">
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..900&family=Manrope:wght@300..800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        
+        <style>
+         <style>
+
+            /*--------------------------------------------------------------
+# Menu Section
+--------------------------------------------------------------*/
+.menu .menu-filters ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--surface-color);
+  border-radius: 50px;
+  padding: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.menu .menu-filters ul li {
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 40px;
+  background-color: transparent;
+  color: var(--default-color);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.menu .menu-filters ul li:hover {
+  color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
+.menu .menu-filters ul li.filter-active {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  box-shadow: 0 4px 15px color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
+@media (max-width: 768px) {
+  .menu .menu-filters ul {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .menu .menu-filters ul li {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    background-color: var(--surface-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.menu .menu-grid .menu-card {
+  background-color: var(--surface-color);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+  height: 100%;
+  position: relative;
+}
+
+.menu .menu-grid .menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.menu .menu-grid .menu-card.featured {
+  border: 2px solid var(--accent-color);
+}
+
+.menu .menu-grid .menu-card.featured:before {
+  content: "Featured";
+  position: absolute;
+  top: 15px;
+  right: -30px;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 5px 40px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transform: rotate(45deg);
+  z-index: 5;
+}
+
+.menu .menu-grid .menu-card .menu-card-image {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.menu .menu-grid .menu-card .menu-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.menu .menu-grid .menu-card .menu-card-image:hover img {
+  transform: scale(1.1);
+}
+
+.menu .menu-grid .menu-card .menu-card-image .dietary-badges {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menu .menu-grid .menu-card .menu-card-image .dietary-badges span {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu .menu-grid .menu-card .menu-card-image .dietary-badges .badge-vegetarian {
+  background-color: color-mix(in srgb, green, transparent 20%);
+  color: var(--contrast-color);
+}
+
+.menu .menu-grid .menu-card .menu-card-image .dietary-badges .badge-vegan {
+  background-color: color-mix(in srgb, #228B22, transparent 20%);
+  color: var(--contrast-color);
+}
+
+.menu .menu-grid .menu-card .menu-card-image .dietary-badges .badge-gluten-free {
+  background-color: color-mix(in srgb, #FFA500, transparent 20%);
+  color: var(--contrast-color);
+}
+
+.menu .menu-grid .menu-card .menu-card-image .dietary-badges .badge-seafood {
+  background-color: color-mix(in srgb, #4682B4, transparent 20%);
+  color: var(--contrast-color);
+}
+
+.menu .menu-grid .menu-card .menu-card-image .dietary-badges .badge-chef {
+  background-color: color-mix(in srgb, #FFD700, transparent 20%);
+  color: var(--default-color);
+}
+
+.menu .menu-grid .menu-card .menu-card-image .dietary-badges .badge-signature {
+  background-color: color-mix(in srgb, #8B008B, transparent 20%);
+  color: var(--contrast-color);
+}
+
+.menu .menu-grid .menu-card .menu-card-image .dietary-badges .badge-alcoholic {
+  background-color: color-mix(in srgb, #DC143C, transparent 20%);
+  color: var(--contrast-color);
+}
+
+.menu .menu-grid .menu-card .menu-card-image .dietary-badges .badge-fresh {
+  background-color: color-mix(in srgb, #32CD32, transparent 20%);
+  color: var(--contrast-color);
+}
+
+.menu .menu-grid .menu-card .menu-card-image .price-overlay {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu .menu-grid .menu-card .menu-card-content {
+  padding: 24px;
+}
+
+.menu .menu-grid .menu-card .menu-card-content h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--heading-color);
+}
+
+.menu .menu-grid .menu-card .menu-card-content p {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.menu .menu-grid .menu-card .menu-card-content .spice-level {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.menu .menu-grid .menu-card .menu-card-content .spice-level .spice-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: color-mix(in srgb, var(--default-color), transparent 80%);
+  transition: background-color 0.3s;
+}
+
+.menu .menu-grid .menu-card .menu-card-content .spice-level .spice-dot.active {
+  background-color: var(--accent-color);
+}
+
+.menu .menu-actions {
+  margin-top: 3rem;
+  padding: 24px;
+  background-color: var(--surface-color);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.menu .menu-actions .seasonal-notice {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-size: 0.9rem;
+}
+
+.menu .menu-actions .seasonal-notice i {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
+.menu .menu-actions .menu-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: var(--red-color);
+  color: var(--black-color);
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px color-mix(in srgb, var(--accent-color), transparent 60%);
+}
+
+.menu .menu-actions .menu-download-btn:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px color-mix(in srgb, var(--accent-color), transparent 40%);
+}
+
+.menu .menu-actions .menu-download-btn i {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .menu .menu-actions {
+    text-align: center;
+  }
+
+  .menu .menu-actions .row>div {
+    margin-bottom: 1rem;
+  }
+}
+
+.menu .chef-recommendations {
+  margin-top: 4rem;
+}
+
+.menu .chef-recommendations .section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.menu .chef-recommendations .section-header h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.menu .chef-recommendations .section-header h3 i {
+  color: var(--accent-color);
+}
+
+.menu .chef-recommendations .section-header p {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 1.1rem;
+}
+
+.menu .chef-recommendations .recommendation-card {
+  background-color: var(--surface-color);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  height: 100%;
+}
+
+.menu .chef-recommendations .recommendation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-image {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-image:hover img {
+  transform: scale(1.08);
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-image .chef-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(135deg, var(--accent-color), color-mix(in srgb, var(--accent-color), #FF6B6B 30%));
+  color: var(--contrast-color);
+  padding: 8px 16px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-image .chef-badge i {
+  font-size: 1rem;
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-content {
+  padding: 30px;
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-content .recommendation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-content .recommendation-header h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  flex: 1;
+  margin-right: 15px;
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-content .recommendation-header .recommendation-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent-color);
+  white-space: nowrap;
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-content p {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-content .recommendation-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-content .recommendation-details .serving-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 0.85rem;
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-content .recommendation-details .serving-info i {
+  color: var(--accent-color);
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-content .recommendation-details .dietary-info {
+  display: flex;
+  gap: 6px;
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-content .recommendation-details .dietary-info .mini-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-content .recommendation-details .dietary-info .mini-badge.gluten-free {
+  background-color: color-mix(in srgb, #FFA500, transparent 85%);
+  color: #FFA500;
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-content .recommendation-details .dietary-info .mini-badge.dairy-free {
+  background-color: color-mix(in srgb, #32CD32, transparent 85%);
+  color: #32CD32;
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-content .recommendation-details .dietary-info .mini-badge.seafood {
+  background-color: color-mix(in srgb, #4682B4, transparent 85%);
+  color: #4682B4;
+}
+
+.menu .chef-recommendations .recommendation-card .recommendation-content .recommendation-details .dietary-info .mini-badge.premium {
+  background-color: color-mix(in srgb, #FFD700, transparent 85%);
+  color: #B8860B;
+}
+
+@media (max-width: 1200px) {
+  .menu .menu-grid .menu-card .menu-card-content {
+    padding: 20px;
+  }
+
+  .menu .menu-grid .menu-card .menu-card-content h4 {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu .chef-recommendations .section-header h3 {
+    font-size: 1.6rem;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .menu .menu-grid .menu-card .menu-card-image {
+    height: 220px;
+  }
+
+  .menu .chef-recommendations .recommendation-card .recommendation-content {
+    padding: 24px;
+  }
+
+  .menu .chef-recommendations .recommendation-card .recommendation-content .recommendation-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .menu .chef-recommendations .recommendation-card .recommendation-content .recommendation-header h4 {
+    margin-right: 0;
+    font-size: 1.25rem;
+  }
+
+  .menu .chef-recommendations .recommendation-card .recommendation-content .recommendation-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu .menu-grid .menu-card .menu-card-image {
+    height: 200px;
+  }
+
+  .menu .menu-grid .menu-card .menu-card-image .price-overlay {
+    font-size: 1rem;
+    padding: 6px 12px;
+  }
+}
+
+        </style>
+
+
+        
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Spinner Start 
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+         -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar bg-light px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center">
+                <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-muted small me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Euata, Ragem Community</a>
+                        <a href="tel:+256 772994886" class="text-muted small me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+256 772994886/+256 772994886</a>
+                        <a href="mailto:stbasilpalliativehomecareltd@gmail.com" class="text-muted small me-0"><i class="fas fa-envelope text-primary me-2"></i>stbasilpalliativehomecareltd@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center" style="height: 45px;">
+                        <a href="#"><small class="me-3 text-dark"><i class="fa fa-thumb-up text-primary me-2"><marquee behavior="scroll" direction="left" scrollamount="04" ><font size="4px">“Patience and Perseverance Pays.”</font></marquee></i></small></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+       
+       <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <!--<h1 class="text-primary"><i class="fas fa-search-dollar me-3"></i>Sbphcp</h1>-->
+                    <img src="img/official-logo.png" alt="St. Basil Palliative Home Care Promotion logo"> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="About-Us.html" class="nav-item nav-link">About Us</a>
+                        <a href="Services.html" class="nav-item nav-link">Our Services</a>
+                        <a href="Get-Involved.html" class="nav-item nav-link">Get Involved</a>
+                        <a href="Faq.html" class="nav-item nav-link">FAQ</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                    <a href="Donate.html" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Support Us</a>
+                </div>
+            </nav>
+
+            <!-- Header Start -->
+            <div class="container-fluid bg-breadcrumb">
+                <div class="container text-center py-5" style="max-width: 900px;">
+                    <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Please Support Us</h4>
+                    <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active text-primary">Donate Now</li>
+                    </ol>    
+                </div>
+            </div>
+            <!-- Header End -->
+        </div>
+        <!-- Navbar & Hero End -->
+        <br>
+
+         <!-- Offer Start -->
+        <div class="container-fluid offer-section pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                   
+                    <h1 class="display-5 mb-4">Ways to Donate or Support us</h1>
+                    <p class="mb-0" style="text-align: justify;">Would you like to make a donation or offer support to help us carry ou our work, we welcome compassionate individuals and partners to join hands with St. Basil Palliative Home Care Promomtion as we support volunerable people in need. Your contribution whether financial, material, or technical- enables our dedicated team to continue serving those facing life - time conditions. <b>You're welcome</b>
+                    </p>
+                </div>
+                
+                
+                
+                
+        <!-- Menu Section -->
+    <section id="menu" class="menu section">
+
+     
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+           <div class="menu-actions" data-aos="fade-up" data-aos-delay="400">
+          <div class="row align-items-center">
+             <div class="col-md-4 text-md-end">
+             
+                 <img src="img/Inkind.png" alt="Executive chef portrait" class="img-fluid">
+          
+            </div>
+            <div class="col-md-8">
+                <h2>1.In-Kind</h2>
+                <div class="disclaimer-box">
+              <ul>
+                <li> In-Person Donations: St. Basil Palliative Home Care Promotion accepts donations at their head office during office hours and you can make your donation count personally by visiting our head office and necessary arranagements can be done immediately.</li>
+                  <li> Electronic equipment for office and field use like computers, printers, photocopiers, research tablets, smart phones and internet bundles for networking, office phone, tables, projector and screen, camera etc.</li>
+                  <li>  Transport means for volunteers e.g. motor-vehicles, motorcycles and bicycles.</li>
+                 
+              </ul>
+            </div>
+             
+            </div>
+           
+          </div>
+        </div>
+
+
+         <div class="menu-actions" data-aos="fade-up" data-aos-delay="400">
+          <div class="row align-items-center">
+             
+            <div class="col-md-8">
+                <h2>2. Bank Transfers</h2>
+                <div class="disclaimer-box">
+
+                   <h4><b><u>Centenary Bank Account</u></b></h4>
+              <ul>
+                 <li><b>Account Name: </b>ST BASIL PALLIATIVE HOME CARE PROMOTION</li>
+                 <li><b>Account Number: </b>3205217691</li>
+                 <li><b>Bank: </b>Centenary Bank</li>
+                 <li><b>Purpose: </b>Donation / support for palliative home care services</li>
+              </ul>
+            </div>
+
+            <p class="donation-note"><b>Thank you for supporting vulnerable patients and families through St. Basil Palliative Home Care Promotion.</b></p>
+             
+            </div>
+           <div class="col-md-4 text-md-end">
+             
+                 <img src="img/Centenary2.png" alt="Donation through Bank" class="img-fluid">
+          
+            </div>
+          </div>
+        </div>
+
+
+        
+         <div class="menu-actions" data-aos="fade-up" data-aos-delay="400">
+          <div class="row align-items-center">
+             
+            <div class="col-md-8">
+                <h2>3. MTN Mobile Money</h2>
+                <div class="disclaimer-box">
+
+                   <div class="col-md-5">
+
+                                        <p class="mb-4">Send your MTN Mobile Money support to:<br /><b>Number:</b> <code>0772532284</code><br /><b>Registered Name:</b> LEONORA TORACH<br /><b>Network:</b> MTN Uganda<br />Enter your donation amount and confirm with your Mobile Money PIN.
+
+                                        </p>
+                                        <!--<a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>-->
+                                    </div>
+            </div>
+
+            <p class="donation-note"><b>Please confirm the registered name as LEONORA TORACH before completing the transaction.</b></p>
+             
+            </div>
+           <div class="col-md-4 text-md-end">
+             
+                 <img src="img/MTN.jpg" alt="Donation through Bank" class="img-fluid">
+          
+            </div>
+          </div>
+        </div>
+
+
+          </div>
+
+        </div>
+
+ 
+
+      </div>
+
+    </section><!-- /Menu Section -->
+    
+                
+                
+                
+                
+            </div>
+        </div>
+        <!-- Offer End -->
+
+ 
+    
+
+    
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5 border-start-0 border-end-0" style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
+                        <div class="footer-item">
+                            <a href="index.html" class="p-0">
+                            <h4 class="text-white"></i>St. Basil Palliative Home Care Promotion</h4>
+                           
+                            </a>
+                            <p class="mb-4">The Central Office of St Basil Palliative Home Care Promotion shall for the moment be located at Euata, Ragem community, 5 kilometers away from Arua City headquarter along Nebbi-Pakwach road and may have offices in any other places that shall be approved by the promoters. </p>
+                            <!--<div class="d-flex">
+                                <a href="#" class="bg-primary d-flex rounded align-items-center py-2 px-3 me-2">
+                                    <i class="fas fa-apple-alt text-white"></i>
+                                    <div class="ms-3">
+                                        <small class="text-white">Download on the</small>
+                                        <h6 class="text-white">App Store</h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="bg-dark d-flex rounded align-items-center py-2 px-3 ms-2">
+                                    <i class="fas fa-play text-primary"></i>
+                                    <div class="ms-3">
+                                        <small class="text-white">Get it on</small>
+                                        <h6 class="text-white">Google Play</h6>
+                                    </div>
+                                </a>
+                            </div>-->
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-2">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Site Map</h4>
+                            <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+                            <a href="About-Us.html"><i class="fas fa-angle-right me-2"></i> About-Us</a>
+<a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact us</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Quick Links</h4>
+<a href="Donate.html"><i class="fas fa-angle-right me-2"></i> Support</a>
+                            <a href="Faq.html"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+</div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Contact Info</h4>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">Euata-5km from Arua City</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <p class="text-white mb-0">stbasilpalliativehomecareltd@gmail.com</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">(+256) 772532284</p>
+                            </div>
+                           
+                            <div class="d-flex">
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-twitter text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-instagram text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                         <p>Copyright&copy;St. Bazil Palliative Home Care Promotion</a>,All right reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="#" target="_blank">ZHED LABS</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a> 
+        
+          <!--LOCAL DONORS-->
+    <script>
+  // Slideshow Script
+  let slides = document.querySelectorAll("#slideshow img");
+  let index = 0;
+  setInterval(() => {
+    slides[index].style.opacity = 0; // fade out current
+    index = (index + 1) % slides.length;
+    slides[index].style.opacity = 1; // fade in next
+  }, 4000);
+
+  // Responsive behavior
+  function adjustCard() {
+    let card = document.getElementById("donorCard");
+    if(window.innerWidth <= 600){ // phone
+      card.style.display = "none";
+    } else if(window.innerWidth <= 900){ // tablet
+      card.style.width = "220px";
+      card.style.fontSize = "0.85em";
+    } else { // desktop
+      card.style.width = "320px";
+      card.style.fontSize = "1em";
+      card.style.display = "block";
+    }
+  }
+  window.addEventListener("resize", adjustCard);
+  adjustCard();
+
+  // Make the card disappear after 6 seconds
+  setTimeout(() => {
+    let card = document.getElementById("donorCard");
+    card.style.opacity = "0"; 
+    card.style.visibility = "hidden";
+  }, 6000);
+</script>
+    
+    
+    
+    
+    
+    <script>
+(function(){
+  const root = document.getElementById('countdown');
+  const targetAttr = root.getAttribute('data-target');
+
+  function parseTarget(v){
+    if(!v) return null;
+    const d = new Date(v);
+    return isNaN(d.getTime()) ? null : d;
+  }
+
+  let target = parseTarget(targetAttr) || (function(){
+    const d = new Date(); d.setHours(d.getHours()+48); return d;
+  })();
+
+  const els = {
+    days: document.getElementById('days'),
+    hours: document.getElementById('hours'),
+    minutes: document.getElementById('minutes'),
+    seconds: document.getElementById('seconds'),
+    message: document.getElementById('message')
+  };
+
+  function pad(n){ return String(n).padStart(2,'0'); }
+
+  let timerId = null;
+
+  function update(){
+    const now = new Date();
+    let diff = target.getTime() - now.getTime();
+    if(diff <= 0){
+      els.days.textContent = '00';
+      els.hours.textContent = '00';
+      els.minutes.textContent = '00';
+      els.seconds.textContent = '00';
+      els.message.textContent = '&#127881; Started!';
+      if(timerId){ clearInterval(timerId); timerId = null; }
+      return;
+    }
+
+    const secTotal = Math.floor(diff / 1000);
+    const days = Math.floor(secTotal / 86400);
+    const hours = Math.floor((secTotal % 86400) / 3600);
+    const minutes = Math.floor((secTotal % 3600) / 60);
+    const seconds = secTotal % 60;
+
+    els.days.textContent = pad(days);
+    els.hours.textContent = pad(hours);
+    els.minutes.textContent = pad(minutes);
+    els.seconds.textContent = pad(seconds);
+
+    els.message.textContent = `${target.toLocaleString()}`;
+  }
+
+  update();
+  timerId = setInterval(update, 1000);
+})();
+</script>
+        
+        
+            
+    <script>
+(function(){
+  const root = document.getElementById('countdown');
+  const targetAttr = root.getAttribute('data-target');
+
+  function parseTarget(v){
+    if(!v) return null;
+    const d = new Date(v);
+    return isNaN(d.getTime()) ? null : d;
+  }
+
+  let target = parseTarget(targetAttr) || (function(){
+    const d = new Date(); d.setHours(d.getHours()+48); return d;
+  })();
+
+  const els = {
+    days: document.getElementById('days'),
+    hours: document.getElementById('hours'),
+    minutes: document.getElementById('minutes'),
+    seconds: document.getElementById('seconds'),
+    message: document.getElementById('message')
+  };
+
+  function pad(n){ return String(n).padStart(2,'0'); }
+
+  let timerId = null;
+
+  function update(){
+    const now = new Date();
+    let diff = target.getTime() - now.getTime();
+    if(diff <= 0){
+      els.days.textContent = '00';
+      els.hours.textContent = '00';
+      els.minutes.textContent = '00';
+      els.seconds.textContent = '00';
+      els.message.textContent = '&#127881; Started!';
+      if(timerId){ clearInterval(timerId); timerId = null; }
+      return;
+    }
+
+    const secTotal = Math.floor(diff / 1000);
+    const days = Math.floor(secTotal / 86400);
+    const hours = Math.floor((secTotal % 86400) / 3600);
+    const minutes = Math.floor((secTotal % 3600) / 60);
+    const seconds = secTotal % 60;
+
+    els.days.textContent = pad(days);
+    els.hours.textContent = pad(hours);
+    els.minutes.textContent = pad(minutes);
+    els.seconds.textContent = pad(seconds);
+
+    els.message.textContent = `${target.toLocaleString()}`;
+  }
+
+  update();
+  timerId = setInterval(update, 1000);
+})();
+</script>
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
