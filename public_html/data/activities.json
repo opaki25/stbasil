@@ -4,5 +4,11 @@
     "category": "Health Services",
     "note": "Home visitation activity with faces covered for privacy before publication.",
     "image": "img/home-visitation-redacted.jpg"
+  },
+  {
+    "title": "Hospital surgical ward visit",
+    "category": "Health Services",
+    "note": "Hospital surgical ward visit for a patient who needed urgent care coordination. The family requested support for food and sanitary items, with follow-up requested from the ward team and ambulance fuel support discussed.",
+    "image": "img/hospital-surgical-ward-visit-redacted.jpg"
   }
 ]
