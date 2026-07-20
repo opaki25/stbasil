@@ -10,5 +10,11 @@
     "category": "Health Services",
     "note": "Hospital surgical ward visit for a patient who needed urgent care coordination, family support, and follow-up from the care team.",
     "image": "img/hospital-surgical-ward-visit-redacted.jpg"
+  },
+  {
+    "title": "Home visit",
+    "category": "Health Services",
+    "note": "Home visit activity with the patient's face covered for privacy before publication.",
+    "image": "img/home-visit-patient-redacted.jpg"
   }
 ]
